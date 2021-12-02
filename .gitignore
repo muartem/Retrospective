@@ -39,6 +39,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+.husky/
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -122,6 +123,4 @@ dist
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/.idea

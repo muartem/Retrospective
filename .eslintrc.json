@@ -1,10 +1,12 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest/globals": true
     },
     "extends": [
         "airbnb-base",
+        "plugin:react/recommended",
         "prettier"
     ],
     "parser": "babel-eslint",
@@ -16,13 +18,10 @@
     },
     "plugins": [
         "react",
-        "react-hooks"
+        "react-hooks",
+        "jest"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
         "linebreak-style": [
             "error",
             "windows"
@@ -34,6 +33,37 @@
         "semi": [
             "error",
             "never"
-        ]
+        ],
+        "import/prefer-default-export": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [
+                    [
+                        "@components",
+                        "./src/components"
+                    ],
+                    [
+                        "@assets",
+                        "./src/assets"
+                    ],
+                    [
+                        "@redux",
+                        "./src/redux"
+                    ],
+                    [
+                        "@servises",
+                        "./src/servises"
+                    ]
+                ],
+                "extensions": [
+                    ".ts",
+                    ".js",
+                    ".jsx",
+                    ".json"
+                ]
+            }
+        }
     }
 }
