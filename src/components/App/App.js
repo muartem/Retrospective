@@ -1,9 +1,13 @@
 import React from 'react'
-import './App.css'
-import { Hoo } from '../../legasy'
+import Header from '../Header'
+import Board from '../Board'
 
-function App() {
-  return <Hoo />
-}
+
+const App = () => (
+  <>
+    <Header />
+    <Board />
+  </>
+)
 
 export default App
