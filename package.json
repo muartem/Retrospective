@@ -26,7 +26,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "serve -s build",
+    "deploy": "firebase deploy",
     "eject": "craco eject",
     "prepare": "husky install",
     "prettier": "prettier  — write src/**/*.js",
